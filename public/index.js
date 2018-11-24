@@ -1,15 +1,6 @@
 
 
 
-const Model = Backbone.Model.extend({
-    defaults: function () {
-        return {
-            title: '姓名',
-            text: '叶玉国'
-        }
-    }
-
-})
 
 
 const View = Backbone.View.extend({
