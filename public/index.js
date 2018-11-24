@@ -52,4 +52,50 @@ const vs = new Views({
         { title: "mail", text: '346243440@qq.com' }
     ]
 })
+
+
+const ViewSelling = Backbone.View.extend({
+    initialize: function () {
+        this.render()
+    },
+    htmlTemplate: _.template($('#selling-template').html()),
+    render: function () {
+        return this.htmlTemplate(this.model)
+    }
+})
+const ViewSells = Backbone.View.extend({
+    initialize: function () {
+        this.render()
+    },
+    htmlObj: $('#selling-domain'),
+    render: function () {
+        let model = this.model
+        _.each(model, m => {
+            let m_view = new ViewSelling({ model: m })
+            // this.$el.html(m_view.render().$el)
+            this.htmlObj.append(m_view.render())
+        })
+    }
+})
+
+
+new ViewSells({
+    model: [
+        { name: '360vip' },
+        { name: 'vip360' },
+        { name: 'ai360' },
+        { name: 'applets' },
+        { name: 'hxyxt' },
+        { name: 'goldwind' },
+        { name: 'allegion' },
+        { name: 'mbalib' },
+        { name: 'skyworksinc' },
+        { name: 'take2games' },
+        { name: 'globalpaymentsinc' },
+    ]
+})
+
+
+
+
 // vs.render()

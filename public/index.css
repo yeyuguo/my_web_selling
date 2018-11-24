@@ -38,3 +38,49 @@ body {
 .textInfo > div.lineText:after {
   clear: both;
 }
+.topBottomBorder {
+  border-top: 1px solid #00b3bd;
+  border-bottom: 1px solid #00b3bd;
+  border-left: 1px dashed transparent;
+  border-right: 1px dashed transparent;
+  animation: all 1s;
+}
+.dashed {
+  border: 1px dashed #00d7d6;
+}
+.boxSize {
+  box-sizing: border-box;
+}
+.selling-domain p {
+  color: #00b3bd;
+  font-size: 20px;
+  text-align: center;
+}
+.selling-domain a {
+  color: #d4e0ee;
+  text-decoration: none;
+}
+.selling-domain li {
+  text-align: center;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  margin: 5px 2px;
+  border: 1px dashed #00d7d6;
+  padding: 2px 5px;
+}
+.selling-domain li:hover {
+  border-top: 1px solid #00b3bd;
+  border-bottom: 1px solid #00b3bd;
+  border-left: 1px dashed transparent;
+  border-right: 1px dashed transparent;
+  animation: all 1s;
+}
+.selling-domain li:last-child {
+  border-right: none;
+}
+#selling-domain {
+  box-sizing: border-box;
+  text-align: center;
+  list-style: none;
+}

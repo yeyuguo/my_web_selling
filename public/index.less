@@ -48,3 +48,52 @@ body {
         }
     }
 }
+
+.topBottomBorder {
+    border-top: 1px solid @green;
+    border-bottom: 1px solid @green;
+    border-left: 1px dashed transparent;
+    border-right: 1px dashed transparent;
+    animation: all 1s;
+}
+
+.dashed {
+    border: 1px dashed @lgreen;
+}
+
+.boxSize {
+    box-sizing: border-box;
+}
+
+.selling-domain {
+    & p {
+        color: @green;
+        font-size: 20px;
+        text-align: center;
+    }
+    & a {
+        color: @white;
+        text-decoration: none;
+    }
+    & li {
+        text-align: center;
+        .boxSize;
+        width: 30%;
+        float: left;
+        margin: 5px 2px;
+        .dashed;
+        padding: 2px 5px;
+        &:hover {
+            .topBottomBorder;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+#selling-domain {
+    .boxSize;
+    text-align: center;
+    list-style: none;
+}
