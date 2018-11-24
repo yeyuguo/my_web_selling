@@ -47,9 +47,9 @@ const Views = Backbone.View.extend({
 
 const vs = new Views({
     model: [
-        { title: "状态", text: '在售' },
-        { title: "域名", text: window.location.hostname },
-        { title: "邮箱", text: '346243440@qq.com' }
+        { title: "status", text: 'selling' },
+        { title: "domain", text: window.location.hostname },
+        { title: "mail", text: '346243440@qq.com' }
     ]
 })
 // vs.render()
