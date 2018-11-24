@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url('source/bg.jpeg') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  color: #d4e0ee;
+  height: 100vh;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.textInfo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: 1px dashed #00d7d6;
+}
+.textInfo > div.lineText {
+  padding: 5px 10px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.textInfo > div.lineText * {
+  float: left;
+}
+.textInfo > div.lineText span {
+  width: 80px;
+  display: block;
+}
+.textInfo > div.lineText:after {
+  clear: both;
+}
